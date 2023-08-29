@@ -65,6 +65,7 @@
             btnMilliyet.TabIndex = 1;
             btnMilliyet.Text = "MİLLİYET";
             btnMilliyet.UseVisualStyleBackColor = true;
+            btnMilliyet.Click += btnMilliyet_Click;
             // 
             // btnNtv
             // 
