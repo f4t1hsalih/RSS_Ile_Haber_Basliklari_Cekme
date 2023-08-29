@@ -9,56 +9,47 @@ namespace RSS_Ile_Haber_Basliklari_Cekme
             InitializeComponent();
         }
 
-        private void btnHurriyet_Click(object sender, EventArgs e)
+        private void LoadRssTitles(string rssUrl)
         {
             listBox1.Items.Clear();
-            XmlTextReader xmlread = new XmlTextReader("http://www.hurriyet.com.tr/rss/anasayfa");
-            while (xmlread.Read())
+
+            try
             {
-                if (xmlread.Name == "title")
+                using (XmlTextReader xmlread = new XmlTextReader(rssUrl))
                 {
-                    listBox1.Items.Add(xmlread.ReadString());
+                    while (xmlread.Read())
+                    {
+                        if (xmlread.Name == "title")
+                        {
+                            listBox1.Items.Add(xmlread.ReadString());
+                        }
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata Oluþtu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnHurriyet_Click(object sender, EventArgs e)
+        {
+            LoadRssTitles("http://www.hurriyet.com.tr/rss/anasayfa");
         }
 
         private void btnMilliyet_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            XmlTextReader xmlread = new XmlTextReader("http://www.milatgazetesi.com/rss.php");
-            while (xmlread.Read())
-            {
-                if (xmlread.Name == "title")
-                {
-                    listBox1.Items.Add(xmlread.ReadString());
-                }
-            }
+            LoadRssTitles("http://www.milatgazetesi.com/rss.php");
         }
 
         private void btnNtv_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            XmlTextReader xmlread = new XmlTextReader("https://www.ntv.com.tr/gundem.rss");
-            while (xmlread.Read())
-            {
-                if (xmlread.Name == "title")
-                {
-                    listBox1.Items.Add(xmlread.ReadString());
-                }
-            }
+            LoadRssTitles("https://www.ntv.com.tr/gundem.rss");
         }
 
         private void btnSabah_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            XmlTextReader xmlread = new XmlTextReader("https://www.sabah.com.tr/rss/gundem.xml");
-            while (xmlread.Read())
-            {
-                if (xmlread.Name == "title")
-                {
-                    listBox1.Items.Add(xmlread.ReadString());
-                }
-            }
+            LoadRssTitles("https://www.sabah.com.tr/rss/gundem.xml");
         }
     }
 }
