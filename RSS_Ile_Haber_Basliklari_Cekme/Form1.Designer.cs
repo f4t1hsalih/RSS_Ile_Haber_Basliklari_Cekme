@@ -45,6 +45,7 @@
             // 
             // btnHurriyet
             // 
+            btnHurriyet.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnHurriyet.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnHurriyet.Location = new Point(12, 392);
             btnHurriyet.Name = "btnHurriyet";
@@ -52,9 +53,11 @@
             btnHurriyet.TabIndex = 0;
             btnHurriyet.Text = "HÜRRİYET";
             btnHurriyet.UseVisualStyleBackColor = true;
+            btnHurriyet.Click += btnHurriyet_Click;
             // 
             // btnMilliyet
             // 
+            btnMilliyet.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnMilliyet.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnMilliyet.Location = new Point(165, 392);
             btnMilliyet.Name = "btnMilliyet";
@@ -65,6 +68,7 @@
             // 
             // btnNtv
             // 
+            btnNtv.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnNtv.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnNtv.Location = new Point(318, 392);
             btnNtv.Name = "btnNtv";
@@ -75,6 +79,7 @@
             // 
             // btnSabah
             // 
+            btnSabah.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnSabah.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSabah.Location = new Point(471, 392);
             btnSabah.Name = "btnSabah";
@@ -85,6 +90,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox1.Location = new Point(12, 344);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(147, 42);
@@ -94,6 +100,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox2.Location = new Point(165, 344);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(147, 42);
@@ -103,6 +110,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox3.Location = new Point(318, 344);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(147, 42);
@@ -112,6 +120,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox4.Location = new Point(471, 344);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(147, 42);
@@ -121,6 +130,7 @@
             // 
             // listBox1
             // 
+            listBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 21;
             listBox1.Location = new Point(12, 12);
