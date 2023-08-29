@@ -28,20 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnHurriyet = new Button();
+            btnMilliyet = new Button();
+            btnNtv = new Button();
+            btnSabah = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            listBox1 = new ListBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
+            // 
+            // btnHurriyet
+            // 
+            btnHurriyet.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnHurriyet.Location = new Point(12, 392);
+            btnHurriyet.Name = "btnHurriyet";
+            btnHurriyet.Size = new Size(147, 40);
+            btnHurriyet.TabIndex = 0;
+            btnHurriyet.Text = "HÜRRİYET";
+            btnHurriyet.UseVisualStyleBackColor = true;
+            // 
+            // btnMilliyet
+            // 
+            btnMilliyet.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMilliyet.Location = new Point(165, 392);
+            btnMilliyet.Name = "btnMilliyet";
+            btnMilliyet.Size = new Size(147, 40);
+            btnMilliyet.TabIndex = 1;
+            btnMilliyet.Text = "MİLLİYET";
+            btnMilliyet.UseVisualStyleBackColor = true;
+            // 
+            // btnNtv
+            // 
+            btnNtv.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNtv.Location = new Point(318, 392);
+            btnNtv.Name = "btnNtv";
+            btnNtv.Size = new Size(147, 40);
+            btnNtv.TabIndex = 2;
+            btnNtv.Text = "NTV";
+            btnNtv.UseVisualStyleBackColor = true;
+            // 
+            // btnSabah
+            // 
+            btnSabah.Font = new Font("Sitka Banner Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSabah.Location = new Point(471, 392);
+            btnSabah.Name = "btnSabah";
+            btnSabah.Size = new Size(147, 40);
+            btnSabah.TabIndex = 3;
+            btnSabah.Text = "SABAH";
+            btnSabah.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(12, 344);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(147, 42);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(165, 344);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(147, 42);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(318, 344);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(147, 42);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 6;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(471, 344);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(147, 42);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 7;
+            pictureBox4.TabStop = false;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 21;
+            listBox1.Location = new Point(12, 12);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(606, 319);
+            listBox1.TabIndex = 8;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(617, 389);
+            BackColor = Color.FromArgb(151, 178, 172);
+            ClientSize = new Size(630, 444);
+            Controls.Add(listBox1);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnSabah);
+            Controls.Add(btnNtv);
+            Controls.Add(btnMilliyet);
+            Controls.Add(btnHurriyet);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
+            ForeColor = Color.FromArgb(35, 28, 176);
+            Margin = new Padding(4);
             Name = "Form1";
-            Text = "Form1";
+            Text = "RSS İle Haber Başlıkları";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnHurriyet;
+        private Button btnMilliyet;
+        private Button btnNtv;
+        private Button btnSabah;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private ListBox listBox1;
     }
 }

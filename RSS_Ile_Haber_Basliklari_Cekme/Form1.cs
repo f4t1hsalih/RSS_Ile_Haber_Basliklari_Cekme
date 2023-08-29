@@ -6,5 +6,6 @@ namespace RSS_Ile_Haber_Basliklari_Cekme
         {
             InitializeComponent();
         }
+
     }
 }
