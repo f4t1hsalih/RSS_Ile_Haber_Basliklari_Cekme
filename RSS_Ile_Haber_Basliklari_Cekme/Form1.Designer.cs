@@ -77,6 +77,7 @@
             btnNtv.TabIndex = 2;
             btnNtv.Text = "NTV";
             btnNtv.UseVisualStyleBackColor = true;
+            btnNtv.Click += btnNtv_Click;
             // 
             // btnSabah
             // 
