@@ -89,6 +89,7 @@
             btnSabah.TabIndex = 3;
             btnSabah.Text = "SABAH";
             btnSabah.UseVisualStyleBackColor = true;
+            btnSabah.Click += btnSabah_Click;
             // 
             // pictureBox1
             // 

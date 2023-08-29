@@ -47,5 +47,18 @@ namespace RSS_Ile_Haber_Basliklari_Cekme
                 }
             }
         }
+
+        private void btnSabah_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            XmlTextReader xmlread = new XmlTextReader("https://www.sabah.com.tr/rss/gundem.xml");
+            while (xmlread.Read())
+            {
+                if (xmlread.Name == "title")
+                {
+                    listBox1.Items.Add(xmlread.ReadString());
+                }
+            }
+        }
     }
 }
